@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Texte style, first normal and second bold */
+/* .balsamiq-sans-regular {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.balsamiq-sans-bold {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 6px;
+}
+
+/* -------------------- Header -------------------- */
+header {
+    display: flex;
+    align-items: center; /* Texte position */
+    justify-content: space-between;
+    padding: 20px 10%; /* Navigation band size and space to border (%) */
+    /* background-color: aqua; */
+}
+header .logo span {
+    color: #f46a06;
+}
+.menu_number{
+    display: flex; /* Aligns them*/
+    align-items: center; /* Center them */
+}
+.menu_number .number {
+    margin-left: 10px;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin-left: 25px; /* Space between titles */
+    list-style: none;
+}
+.menu li a {
+    font-size: 12px;
+    text-decoration: 0;
+    color: #f46a06;
+    text-transform: capitalize;
+}
+.number {
+    background-color: #f46a06;
+    padding: 7px 30px;
+    color: #fff; /* Text color */
+}
+
+/* -------------------- Homme CSS -------------------- */
+.home {
+    padding: 0 10%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.site_desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.site_desc .left {
+    width: 40%;  /* Box size */
+}
+.site_desc .left h1 {
+    font-size: 30px;
+}
+.site_desc .left p {
+    color: #7c7c7c;
+    margin-top: 10px;
+}
+.left_button {
+    display: flex;
+    margin-top: 20px;
+}
+
+.left_button a {
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 12px;
+}
+.left_button a img{
+    width: 20px;
+    margin-left: 10px; /* Espace à gauche */
+}
+.left_button a:first-child { /* Box "Command Now" */
+    background-color: #f46a06;
+    color: #fff;
+}
+.left_button a:last-child { /* Box "Learn more" */
+    margin-left: 25px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+a {
+    display: flex;
+    text-decoration: 0;
+}
+
+.site_desc .right {
+    width: 40%;
+    height: 350px;
+}
+.site_desc .right img {
+    height: 100%;
+    width: 130%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
